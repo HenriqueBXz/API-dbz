@@ -26,7 +26,8 @@ async function fetchCharacters(page){
                 <p><strong>gender:</strong> ${characters.gender}</p>
                 <p><strong>ki:</strong> ${characters.ki}</p>
                 <p><strong>affiliation:</strong> ${characters.affiliation}</p>
-            `
+                </div>
+                `;
             resultsDiv.appendChild(card)
         });
 

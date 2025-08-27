@@ -6,7 +6,7 @@ async function fetchCharacters(page){
     resultsDiv.innerHTML = "<p>Carregando..</p>"
 
     try {
-        const response = await fetch(`https://dragonball-api.com/api/characters?=${page}`)
+        const response = await fetch(`https://dragonball-api.com/api/characters?page=${page}`)
         const data = await response.json()
         // console.log(data)
 
@@ -20,13 +20,16 @@ async function fetchCharacters(page){
             const card = document.createElement("div")
             card.className = "card"
             card.innerHTML = `
+                <div>
                 <img src="${characters.image}" alt="${characters.name}">
+                </div>
+                <section>
                 <h3>${characters.name}</h3>
                 <p><strong>race:</strong> ${characters.race}</p>
                 <p><strong>gender:</strong> ${characters.gender}</p>
                 <p><strong>ki:</strong> ${characters.ki}</p>
                 <p><strong>affiliation:</strong> ${characters.affiliation}</p>
-                </div>
+                </section>
                 `;
             resultsDiv.appendChild(card)
         });

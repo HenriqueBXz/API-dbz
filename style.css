@@ -64,7 +64,6 @@ h1 {
     background: #474545db;
     border-radius: 10px;
     margin: 0 40px;
-    padding: 10px;
     width: 300px;
     height: 500px;
     text-align: center;
@@ -90,7 +89,7 @@ h1 {
 
 .card:hover h3 {
     color: rgb(255, 255, 255);
-    text-shadow: 0 2px 8px #ffffff;
+    text-shadow: 0 2px 8px #f78d41;
 }
 
 .card:hover img {
@@ -98,7 +97,7 @@ h1 {
 }
 
 .card h3 {
-    margin: 10px 0 5px;
+    margin-top: -30px;
     font-size: 22px;
     color: #ffffff;
     font-weight: bolder;
@@ -108,6 +107,8 @@ h1 {
 .card p {
     font-size: 14px;
     color: #dddddd93;
+    text-transform: capitalize;
+    font-weight: bold;
 }
 
 .card:hover p {
@@ -117,4 +118,20 @@ h1 {
 .card strong {
     color: #f5925c;
     font-weight: bold;
+}
+
+.card div{
+    height: 60%;
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card section{
+    height: 50%;
+    padding-top: 5vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }

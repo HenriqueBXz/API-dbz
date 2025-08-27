@@ -41,7 +41,7 @@ h1 {
     margin-left: 5px;
     border: none;
     border-radius: 8px;
-    background-color: #219150;
+    background-color: #5060f0;
     color: #fff;
     cursor: pointer;
     transition: 0.3s;
@@ -122,7 +122,7 @@ h1 {
 
 .card div{
     height: 60%;
-    background: white;
+    background: rgb(232, 232, 232);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
